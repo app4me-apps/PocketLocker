@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App4Me — Small, useful apps for everyday life</title>
+<meta name="description" content="App4Me builds small, focused apps that solve real everyday problems — starting with Pocket Locker and Daily Tracker.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">⚡</span>
+      App4Me
+    </a>
+    <nav class="nav-links">
+      <a href="#apps">Apps</a>
+      <a href="#about">About</a>
+      <a href="#idea">Got an idea?</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="app-dock">
+    <div class="dock-tile filled dock-tile-img"><img src="pocketlocker-logo.png?v=2" alt="Pocket Locker"></div>
+    <div class="dock-tile filled dock-tile-img"><img src="dailytracker-logo.png" alt="Daily Tracker"></div>
+    <div class="dock-tile empty">?</div>
+    <div class="dock-tile empty">?</div>
+    <div class="dock-tile empty">?</div>
+    <div class="dock-tile empty">?</div>
+  </div>
+  <div class="wrap">
+    <div class="hero-content">
+      <div class="eyebrow">
+        <span class="mono-tag">SMALL BATCH · SOLO-BUILT · INDIA</span>
+      </div>
+      <h1>Apps that solve<br><span class="accent">one problem well.</span></h1>
+      <p class="lede">
+        The password you can never find. The vaccine date you almost
+        missed. The warranty card that vanished into a drawer. App4Me
+        builds small, sharp apps for real annoyances like these — no
+        bloated platforms, no growth-hacking, just one problem, solved
+        properly.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="apps">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What we've built so far</h2>
+      <p>Two apps live today, with more in progress.</p>
+    </div>
+    <div class="apps-grid">
+      <a href="https://pocketlocker.app/" class="app-card">
+        <div class="app-icon" style="background: linear-gradient(160deg, #1e3a8a, #3b82f6);">🔒</div>
+        <span class="status">Live · Encrypted Vault</span>
+        <h3>Pocket Locker</h3>
+        <p>Every important document — passwords, IDs, insurance, bank details — encrypted on your device and organized your way.</p>
+      </a>
+      <a href="#" class="app-card">
+        <img src="dailytracker-logo.png" alt="Daily Tracker" class="app-icon-img">
+        <span class="status">Live · Family Health Tracker</span>
+        <h3>Daily Tracker</h3>
+        <p>Track your whole family's health in one place — kids' vaccines, feeding, and growth, adults' blood pressure, diabetes, and cholesterol — with smart reminders and progress graphs that actually fire on time.</p>
+      </a>
+      <div class="app-card soon">
+        <div class="app-icon" style="background: #334155;">＋</div>
+        <span class="status">In the works</span>
+        <h3>Something new</h3>
+        <p>We're always chasing the next everyday annoyance worth fixing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom: 0;">
+      <h2>How we build</h2>
+      <p style="margin-top: 16px; max-width: 620px;">
+        No ads, no data selling, no growth-hacking dark patterns. We'd
+        rather build something small and genuinely useful than something
+        big and hollow. Most of our apps work fully offline, store data
+        on your device by default, and only ask for the permissions they
+        actually need.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="idea">
+  <div class="wrap">
+    <div class="idea-cta">
+      <h2>Got an app idea?</h2>
+      <p>If there's a small, everyday problem you wish an app solved better, we're always listening. Real ideas from real annoyances tend to make the best apps.</p>
+      <form action="https://formspree.io/f/xbgreprd" method="POST" class="idea-form">
+        <input type="email" name="email" placeholder="Your email" required class="idea-input">
+        <textarea name="idea" placeholder="What's the idea?" required rows="3" class="idea-textarea"></textarea>
+        <button type="submit" class="btn">Send idea →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="https://pocketlocker.app/">Pocket Locker</a>
+      <a href="/dailytracker/">Daily Tracker</a>
+      <a href="mailto:support@app4me.in">Contact</a>
+    </div>
+    <span class="copyright">© <span id="year"></span> App4Me</span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
